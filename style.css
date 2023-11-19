@@ -1,0 +1,257 @@
+:root {
+    --site-color-01: #c13584;
+    --site-color-01-hover: #9a2c6a;
+}
+
+body {
+    background-color: #525353;
+}
+body:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(../img/fb.jpeg) url(../img/ig.jpeg);
+}
+
+.wrapper-main {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 26px;
+    line-height: 32px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+h2 {
+    font-size: 28px;
+    line-height: 32px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+h3 {
+    font-size: 26px;
+    line-height: 32px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+p {
+    font-size:15px;
+    line-height: 30px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    font-size: 23px;
+    line-height: 35px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.header-main{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    display:flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.header-main-logo{
+width: fit-content;
+height: 100%;
+padding-left: 20px;
+display: flex;
+}
+.header-main-logo img {
+    height: 40px;
+    align-self: center;
+}
+
+.header-main-nav{
+    width: fit-content;
+    height: 100%;
+
+}
+.header-main-nav ul {
+    list-style: none;
+    margin-left: 20px;
+}
+.header-main-nav ul li {
+    display: inline;
+    float: left;
+}
+
+.header-main-nav ul li a {
+padding: 0 10px;
+font-family: Arial, Helvetica, sans-serif;
+line-height: 60px;
+color: #000;
+display: block;
+height: 100%;
+}
+
+.header-main-nav ul li a:hover {
+   color: #b5028b;
+    }
+
+.header-main-sm{
+    width: fit-content;
+    height: 100%;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.header-main-sm-fb {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/fb\ 2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.header-main-sm-fb:hover {
+    background-image: url(../img/fb.jpeg);
+}
+
+.header-main-sm-ig {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/ig\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-main-sm-ig:hover {
+    background-image: url(../img/ig.jpeg);
+}
+
+/* FOOTER */
+
+.footer-main {
+    width: 100%;
+    padding: 60px 0 100px;
+    background-color: #141414;
+}
+
+.footer-main-flex {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.footer-testimony {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-testimony img{
+    width: 100px;
+    height: 100px;
+   border-radius: 100px;
+}
+
+.footer-testimony p {
+    text-align: center;
+    font-size: 16px;
+    padding: 20px 20px 0;
+
+}
+
+.footer-getintouch {
+    padding: 10px 20px;
+    margin: 40px 0 60px;
+    border: 2px solid #fff;
+    font-weight: 500;
+    transition: all ease-in-out 200ms;
+}
+
+.footer-getintouch:hover {
+    color: #b5028b;
+   border: 4px solid var(--site-color-01); 
+}
+
+.footer-sitemap {
+    flex-basis: 100%;
+    display: flex;
+}
+
+.footer-sitemap a {
+    line-height: 40px;
+}
+
+.footer-sitemap a:hover {
+    opacity: 0.8;
+}
+
+.footer-sitemap ul:nth-child(1) {
+    border-left: 4px solid var(--site-color-01);
+    padding-left: 20px;
+}
+
+.footer-sitemap ul:nth-child(1), 
+.footer-sitemap ul:nth-child(2) {
+    flex-basis: 280px;
+}
+
+.footer-sitemap ul:nth-child(3) {
+    flex-basis: 250px;
+}
+
+.footer-sitemap p {
+    text-transform: uppercase;
+}
+
+.footer-sitemap ul:nth-child(4) {
+    flex-grow: 1;
+}
+
+.footer-sitemap ul:nth-child(4) li {
+    clear: both;
+    float: right;
+}
+
+/* mobile version */
+
+@media only screen and (max-width: 600px) {
+    .wrapper-main {
+        width: 80%;
+    }
+    
+    .header-main-logo {
+    padding-left: 20px;
+    }
+
+    .header-main-nav{
+        display: none;
+    }
+
+    .header-main-sm {
+        padding-right: 20px;
+       
+    }
+
+}
